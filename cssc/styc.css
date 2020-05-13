@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+    background: url(../cafe-img/cappuccino.jpg) no-repeat;
+    background-size: cover;
+}
+
+#threeLines {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 600ms ease;
+    -webkit-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    z-index: 2;
+    -webkit-animation: anim 2s linear 2s 5;
+    -ms-animation: anim 2s linear 2s 5;
+    animation: anim 2s linear 2s 5;
+}
+
+
+}
+@-webkit-keyframes anim {
+    50% {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes anim {
+    50% {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+#threeLines #el {
+    cursor: pointer;
+    width: 40px;
+    padding: 0px;
+    height: 3px;
+    background: white;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px transparent;
+    text-indent: -999px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    -webkit-appearance: none;
+    line-height: 0px;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    border-radius: 99px;
+}
+#threeLines #el:active, #threeLines #el:focus {
+    outline: 0px;
+    border: 0px;
+}
+#threeLines #el::after, #threeLines #el::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 3px;
+    background: white;
+    width: 100%;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    border-radius: 99px;
+}
+#threeLines #el::after {
+    top: -15px;
+}
+#threeLines #el::before {
+    bottom: -15px;
+    left: auto;
+    right: 0px;
+}
+#threeLines.active {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
+#threeLines.active #el {
+    background: transparent;
+}
+#threeLines.active #el:after {
+    transform: rotate(-135deg) translate(-10px, -10px) scale(1.2, 1.2);
+    -webkit-transform: rotate(-135deg) translate(-10px, -10px) scale(1.2, 1.2);
+    -ms-transform: rotate(-135deg) translate(-10px, -10px) scale(1.2, 1.2);
+}
+#threeLines.active #el:before {
+    transform: rotate(135deg) translate(-10px, 10px) scale(1.2, 1.2);
+    -webkit-transform: rotate(135deg) translate(-10px, 10px) scale(1.2, 1.2);
+    -ms-transform: rotate(135deg) translate(-10px, 10px) scale(1.2, 1.2);
+}
+#menu {
+    position: absolute;
+    top: 7em;
+    left: 1em;
+    width: 15em;
+    padding: 1em;
+    z-index: 2;
+    position: fixed;
+}
+#menu ul {
+    padding: 0;
+    margin: 0;
+}
+#menu ul li {
+    font-size: 2em;
+    list-style-type: none;
+    left: 0;
+    padding: .5em;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    background-color: white;
+}
+#menu ul li:last-child {
+    margin-top: .5em;
+    padding-top: 1em;
+    font-size: 1.5em;
+}
+#menu ul li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #B36E30;
+}
+li a {
+    color: #654321;
+}
+.front {
+    display: table;
+}
+.front-body {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    width: 60%;
+    height: 100vh;
+    opacity: 0.85;
+}
+.opq {
+    color: #654321;
+    background-color: whitesmoke;
+    padding: 0.5em 0.2em;
+}
+.front-body h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1em;
+}
+.front-body h2 {
+    font-size: 0.5em;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.exser {
+    min-height: 400px;
+    text-align: center;
+}
+.exser .row {
+    padding: 1em;
+}
+.exser p {
+    font-size: 1em;
+}
+#exs {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 5em;
+}
+.wifi {
+    background: url(../cafe-img/wifi.png) no-repeat;
+    background-size: contain;
+}
+#map {
+    height: 300px;
+}
+.bg-gal {
+    background: url(../cafe-img/cbean.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.conbg {
+    background: url(../cafe-img/cb.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-bottom: 2em;
+}
+footer {
+    text-align: center;
+    background-color: white;
+    color: #654321;
+    font-size: 1em;
+    padding: 10px;
+    padding-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+.cnt p {
+    color: #B87335;
+    font-size: 1.2em;
+}
+.abub {
+    color: white;
+    background: url(../cafe-img/wood.jpg) no-repeat;
+    background-size: cover;
+}
+.abu {
+    color: #F7E2CB;
+    display: table;
+    text-align: center;
+}
+.abu .abtext {
+    text-align: justify;
+    text-justify: inter-word;
+    height: 100vh;
+    font-size: 1.5em;
+    /*color: white;*/
+
+    display: table-cell;
+    vertical-align: middle;
+}
+.abg {
+    height: 80vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+.menus {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.menus p {
+    font-size: 1em;
+}
+#team {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 20px;
+    background-color: #BBFACB;
+    text-align: center;
+}
+#team img {
+    border: solid 1px black;
+    text-align: center;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+}
+#specl {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+#specl img {
+    width: 20em;
+    height: 15em;
+}
+.grid {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    padding-bottom: 3em;
+}
+.grid .item {
+    background: #ccc;
+    height: 60px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    width: 20em;
+    background-position: center;
+    background-size: cover;
+}
+.grid .item:nth-child(1) {
+    background-image: url(../cafe-img/gal/cake.jpg);
+}
+.grid .item:nth-child(2) {
+    background-image: url(../cafe-img/gal/cakey.jpg);
+}
+.grid .item:nth-child(3) {
+    background-image: url(../cafe-img/gal/hot-chocolate.jpg);
+}
+.grid .item:nth-child(4) {
+    background-image: url(../cafe-img/gal/coffee.jpg);
+}
+.grid .item:nth-child(5) {
+    background-image: url(../cafe-img/gal/cupcakes.jpg);
+}
+.grid .item:nth-child(6) {
+    background-image: url(../cafe-img/gal/drinks.jpg);
+}
+.grid .item:nth-child(7) {
+    background-image: url(../cafe-img/gal/egg.jpg);
+}
+.grid .item:nth-child(8) {
+    background-image: url(../cafe-img/gal/watermelon.jpg);
+}
+.grid .item:nth-child(9) {
+    background-image: url(../cafe-img/gal/garlic-bread.jpg);
+}
+.grid .item:nth-child(10) {
+    background-image: url(../cafe-img/gal/cocktail.jpg);
+}
+.grid .item:nth-child(11) {
+    background-image: url(../cafe-img/gal/ice.jpg);
+}
+.grid .item:nth-child(12) {
+    background-image: url(../cafe-img/gal/pastry.jpg);
+}
+.grid .item:nth-child(13) {
+    background-image: url(../cafe-img/gal/fries.jpg);
+}
+.grid .item:nth-child(1n) {
+    height: 10em;
+}
+.grid .item:nth-child(4n-5) {
+    height: 15em;
+}
+.grid .item:nth-child(2n) {
+    height: 25em;
+}
+.grid .item:nth-child(3n) {
+    height: 20em;
+}
+.item {
+    opacity: 0;
+}
+.grid .item:hover {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    z-index: 2;
+}
+.item.is-visible {
+    -webkit-animation: Items 600ms ease-in forwards;
+    -ms-animation: Items 600ms ease-in forwards;
+    animation: Items 600ms ease-in forwards;
+}
+@-webkit-keyframes Items2 {
+    0% {
+        opacity: 0;
+        height: 0%;
+        padding: 0px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Items2 {
+    0% {
+        opacity: 0;
+        height: 0%;
+        padding: 0px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes Items {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.3) rotateY(90deg);
+        -ms-transform: scale(0.3) rotateY(90deg);
+        transform: scale(0.3) rotateY(90deg);
+    }
+
+    60% {
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+
+    90% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Items {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.3) rotateY(90deg);
+        -ms-transform: scale(0.3) rotateY(90deg);
+        transform: scale(0.3) rotateY(90deg);
+    }
+
+    60% {
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+
+    90% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.hang h1 {
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 770px) {
+    .bg {
+        background: url(../cafe-img/cappu.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .front-body {
+        width: 100%;
+    }
+
+    .opq {
+        color: #654321;
+        background-color: whitesmoke;
+        padding: 0.5em 0.2em;
+    }
+
+    .front-body h1 {
+        font-size: 0.6em;
+    }
+
+    .front-body h2 {
+        font-size: 0.5em;
+    }
+
+    #threeLines {
+        width: 20px;
+        height: 20px;
+    }
+
+    .conbg {
+        background: url(../cafe-img/cbf.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #menu ul li {
+        font-size: 1em;
+    }
+
+    #menu ul li:last-child {
+        padding-top: 0.6em;
+        font-size: 0.8em;
+    }
+
+    #menu {
+        top: 4em;
+        left: 0.5em;
+        width: 9em;
+        padding: 0.5em;
+    }
+
+    .menus p {
+        font-size: 0.6em;
+    }
+
+    #team img {
+        width: 10em;
+        height: 10em;
+    }
+
+    #specl img {
+        width: 13em;
+        height: 13em;
+    }
+}
+@media screen and (max-width: 610px) {
+    .grid .item {
+        width: 10em;
+    }
+
+    .grid .item:nth-child(1n) {
+        height: 5em;
+    }
+
+    .grid .item:nth-child(4n-5) {
+        height: 8em;
+    }
+
+    .grid .item:nth-child(2n) {
+        height: 13em;
+    }
+
+    .grid .item:nth-child(3n) {
+        height: 10em;
+    }
+}
+@media screen and (max-width: 480px) {
+    #menu ul li {
+        font-size: 0.8em;
+    }
+
+    #menu ul li:last-child {
+        padding-top: 0.6em;
+        font-size: 0.6em;
+    }
+}

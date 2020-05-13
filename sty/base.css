@@ -1,0 +1,273 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.mynav {
+    background-color: teal;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.mynav .navbar-toggle {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .2);
+    font-size: 12px;
+}
+
+.mynav .nav li a:active, .mynav .nav li a:focus, .mynav .nav li a:hover {
+    background-color: transparent;
+    outline: 0;
+}
+
+.mynav .navbar-toggle:active, .mynav .navbar-toggle:focus {
+    outline: 0;
+}
+
+.mynav .navbar-brand {
+    font-weight: 700;
+}
+
+.mynav .navbar-brand:focus {
+    outline: 0;
+}
+
+.mynav a {
+    color: #fff;
+}
+
+.mynav .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.mynav .nav li a:hover {
+    color: rgba(255, 255, 255, .8);
+}
+
+.mynav .nav li.active {
+    outline: 0;
+}
+
+.mynav .nav li.active a {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.mynav .nav li.active a:hover {
+    color: #fff;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    min-height: 400px;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+.content-section {
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+section {
+    padding-top: 3em;
+    min-height: 500px;
+
+}
+
+.content-section .contents {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dech {
+    background-color: white;
+}
+.Portfolio-section {
+    width: 100%;
+    padding-bottom: 30px;
+    background: url(../img/mesh.png) no-repeat;
+    background-size: cover;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+    padding: 10px 0
+}
+
+footer p {
+    margin: 0
+}
+
+#background img {
+    height: 150px;
+    width: 100%;
+    margin: 0px;
+}
+
+#background figure {
+    float: left;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    /*margin-left: 10%;*/
+    box-shadow: 1px 2px 3px black;
+}
+
+figure.eg1 {
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    z-index: 1;
+}
+
+figure.eg2 {
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    z-index: 2;
+}
+
+figure.eg3 {
+    -ms-transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    z-index: 1;
+}
+
+figure.eg4 {
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    z-index: 1;
+}
+
+figure.eg5 {
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    z-index: 1;
+}
+
+figure.eg6 {
+    -ms-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+    z-index: 1;
+}
+
+figure.eg7 {
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+    z-index: 1;
+}
+
+figure.eg8 {
+    -ms-transform: rotate(-13deg);
+    -webkit-transform: rotate(-13deg);
+    transform: rotate(-13deg);
+    z-index: 1;
+}
+
+#background figure:hover {
+    box-shadow: 5px 10px 100px black;
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    z-index: 20;
+}
+
+@media screen and (min-width: 768px) {
+    .mynav {
+        padding: 10px 0;
+        border-bottom: none;
+        letter-spacing: 1px;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out
+    }
+    .mynav.top-nav-collapse {
+        padding: 0;
+        background: #000;
+        border-bottom: 1px solid rgba(255, 255, 255, .3)
+    }
+    .intro {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+    .content-section {
+        min-height: 400px;
+        font-size: 2em;
+    }
+    .Portfolio-section {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    #background img {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-section {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .content-section {
+        font-size: 1.5em;
+    }
+    #background figure {
+        width: 50%;
+    }
+    .Portfolio-section {
+        background: url(../img/meshv.png) no-repeat;
+        background-size: cover;
+    }
+}

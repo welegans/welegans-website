@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="images/l.jpg">
+    <title>Website Cost || How much does a website cost?</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="You can calculate the cost of website yourself by using our cost estimator.
+    Quality is what matters and if you get it at this price you are really lucky!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow35.js"></script>
+    <link href="sty/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/prict.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Katibeh" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="sty/priss.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-79986192-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+
+    <nav id="navg" class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="dech icon-bar"></span>
+                    <span class="dech icon-bar"></span>
+                    <span class="dech icon-bar"></span>
+                </button>
+                <a id="dec" class="navbar-brand" href="#">Welegans</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html#Home">Home</a></li>
+                    <li><a href="index.html#About" target="_self">About</a></li>
+                    <li><a href="index.html#Services">Services</a></li>
+                    <li><a href="index.html#Work">Work</a></li>
+                    <li><a href="index.html#Contact">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="pricy" class="row">
+        <h1>Cost Estimator </h1><br>
+        <p>How much does a website cost?</p>
+        <p>You often get an answer "it depends" and that's true. But we have a simple solution for you; our price calculator. Using this you can get an approximate price of the website you wish to make. </p>
+        <p>Enter the number of pages and select the features of your choice.</p>
+        <p>Please note that this cost estimate does not include the domain and hosting charges</p>
+
+        <br>
+        <div class="col-sm-6" id="work">
+            <form action="" id="calc">
+
+                <div class="form-group">
+                    <label class=" control-label">How many pages do you want?</label>
+                    <input type="text" id="no_of_pages" name="no_of_pages" value="1" onchange="calculateTotal()">
+                </div>
+                <div class="form-group">
+                    <label class=" control-label">Choose your design style : </label><br>
+
+                    <label class='radiolabel'><input type="radio" name="designstyle" value="simple" onclick="calculateTotal()" /> Simple</label><br/>
+                    <label class='radiolabel'><input type="radio" name="designstyle" value="attractive" onclick="calculateTotal()" /> Attractive</label><br/>
+
+                </div>
+
+                <div class="form-group">
+                    <div> <label class="control-label">Select the features you want : </label></div>
+                    <div>
+                        <ul id="lit">
+                            <li><label class='chexlabel'><input type="checkbox" name="responsivedesign" value="responsivedesign" onclick="calculateTotal()" /> Responsive Design</label><br/></li>
+                            <li><label class='chexlabel'><input type="checkbox" name="socialmediaintegration" value="socialmediaintegration" onclick="calculateTotal()" /> Social media integration</label><br/></li>
+                            <li><label class='chexlabel'><input type="checkbox" name="imageslider" value="imageslider" onclick="calculateTotal()" /> Image Slider</label><br/></li>
+                            <li><label class='chexlabel'><input type="checkbox" name="animatedimagegallery" value="animatedimagegallery" onclick="calculateTotal()" /> Animated Image Gallery</label><br/></li>
+                            <li><label class='chexlabel'><input type="checkbox" name="contactform" value="contactform" onclick="calculateTotal()" /> Contact Form</label><br/></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>			<script>    document.getElementById('calc').onsubmit = function() {        return false;    }</script>
+            <p>Some free services provided by Welegans : </p>
+            <ul>
+                <li>Google analytics setup</li>
+                <li>Google MyBusiness setup</li>
+                <li>Basic SEO</li>
+                <li>Editing and updating for one month</li>
+
+            </ul>
+        </div>
+        <div class="col-sm-6" id="total">
+
+            <div id="tot">
+                <p>Rs. <span id="totalPrice">1000</span></p>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p id="foot">Copyright &copy; Welegans 2016</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
